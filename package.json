@@ -1,0 +1,31 @@
+{
+  "name": "faas-instance",
+  "version": "0.0.1",
+  "description": "Finance as a Service instance that can be deployed to any cloud provider. It generates private keys via user provided passphrase and does not store critical data.",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sigimera/faas-instance.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "finance",
+    "cloud",
+    "faas"
+  ],
+  "author": "Alex Oberhauser <alex.oberhauser@sigimera.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sigimera/faas-instance/issues"
+  },
+  "homepage": "https://github.com/Sigimera/faas-instance",
+  "dependencies": {
+    "express": "^4.10.6",
+    "jade": "^1.8.2"
+  }
+}

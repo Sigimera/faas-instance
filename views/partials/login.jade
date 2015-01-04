@@ -1,0 +1,42 @@
+block content
+  div(class="title")
+    h1 Finance as a Service
+    h3 Welcome to the next generation financial service.
+  section(id="signin_main" class="login signin-main")
+    div(class="section-content")
+      div(class="wrap")
+        div(class="container")
+          div(class="form-wrap")
+            div(class="row")
+              if message
+                div(class="alert alert-danger alert-dismissable center")
+                  button(type="button" class="close" data-dismiss="alert" aria-hidden="true") &times;
+                  strong= message
+              div(id="form_1")
+                div(class="form-header")
+                  i(class="fa fa-btc")
+                div(class="form-main")
+                  form
+                    div(class="form-group")
+                      p.
+                        Sensitive data is only handled and stored locally,
+                        hence the passphrase can not be recovered.
+                      p.
+                        If you have no bitcoin wallet you can generate one by
+                        clicking on the '<strong>Create Wallet</strong>' button.
+                    div(class="form-group")
+                      input(type="text" name="passphrase" data-ng-model="passphrase" class="form-control input-lg" placeholder="Enter your 12 word passphrase" required="required")
+                    button(id="signIn_1" type="submit" class="btn btn-block btn-primary" data-ng-click="generateWallet()")
+                      big
+                        strong Access Wallet
+                  div(class="form-footer")
+                    div(class="row")
+                      div(class="col-xs-6")
+                        i(class="fa fa-question")
+                        a(href="#password_recovery" id="forgot_from_1")
+                          big Get Help
+                      div(class="col-xs-6")
+                        i(class="fa fa-check")
+                        a(data-ng-click="generateNewPassphrase()" href="" id="signup_from_1")
+                          big Create Wallet
+

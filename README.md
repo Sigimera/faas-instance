@@ -33,6 +33,9 @@ point will be extended in a more detailed way.
   that provides helper endpoints.
 * **???** for the client-side bitcoin logic handling. (TODO)
 
+## Screenshots
+
+![Login Page](https://raw.githubusercontent.com/Sigimera/faas-instance/master/doc/screenshots/login_page.png)
 
 ## Warranty
 
